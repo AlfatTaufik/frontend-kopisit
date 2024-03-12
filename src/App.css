@@ -1,0 +1,141 @@
+/*=================================== 
+#GOOGLE FONTS 
+===================================*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster+Two:ital@0;1&family=Ojuju&display=swap');
+/*=================================== 
+#CSS VARIABLES
+===================================*/
+
+:root {
+    --header-height: 3rem;
+   /* Warnane */
+    --first-color: hsl(27, 34%, 59%);
+    --first-color-light: hsl(42, 13%, 34%);
+    --title-color: hsl(0,0%, 100%);
+    --text-color: hsl(0,0%,67%);
+    --bg-color: hsl(0,0%,8%);
+    --container-color: hsl(0,0%,6%);
+    --hsla: hsla(0,0%,0%,0.75);
+   /* Font */
+    --body-font: "Ojuju", sans-serif;
+    --second-font: "Lobster Two", sans-serif;
+   /* Ukuran Font */
+    --biggest-font-size: 4rem;
+    --bigger-font-size: 3rem;
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.2rem;
+    --h3-font-size: 1rem;
+    --largest-font-size: 1.3rem;
+    --larger-font-size: 1.25rem;
+    --large-font-size:  1rem;
+    --normal-font-size: 1rem;
+    --weight-400: 400;
+    --weight-500: 500;
+    --weight-600: 600;
+    --weight-700: 700;
+    /* Radius Border */
+    --radius: 0.5rem;
+
+    --transition: ease-in-out;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  input,textarea,body{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+  }
+
+  body{
+    color: var(--text-color);
+    background: var(--bg-color);
+  }
+
+  h1,h2,h3{
+    font-family: var(--second-font);
+    color: var(--title-color);
+    font-weight: var(--weight-400);
+  }
+
+  ul{
+    list-style: none;
+  }
+
+  p{
+    line-height: 1.8;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  input,textarea{
+    border: none;
+    outline: none;
+  }
+
+  img{
+    max-width: 100%;
+  }
+  
+/* Classes */
+
+.container{
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 3rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.btn{
+    display: inline-block;
+    color: var(--title-color);
+    background: var(--first-color);
+    border: 2px solid var(--first-color);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: var(--first-color);
+}
+
+.section{
+    padding-block: 7.5rem;
+}
+  
+.section__title{
+    font-size: var(--big-font-size);
+    margin-bottom: 1rem;
+}
+
+.section__title:before{
+    content: attr(data-title);
+    display: block;
+    color: var(--first-color);
+    font-family: var(--second-font);
+    font-size: var(--h2-font-size);
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.section__title{
+    font-size: var(--big-font-size);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.title-left{
+    text-align: left;
+    margin-bottom: 1rem;
+}
