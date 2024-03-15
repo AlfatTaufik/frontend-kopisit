@@ -2,7 +2,7 @@
   "name": "coffeshop-crocodic",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,9 +10,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.18",
+    "axios": "^1.6.7",
+    "localforage": "^1.10.0",
+    "match-sorter": "^6.3.4",
+    "mdb-react-ui-kit": "^7.2.0",
+    "postcss": "^8.4.35",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^5.0.1"
+    "react-icons": "^5.0.1",
+    "react-login-page": "^1.0.4",
+    "react-router-dom": "^6.22.3",
+    "react-scroll": "^1.9.0",
+    "sort-by": "^0.0.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",
@@ -22,6 +32,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "tailwindcss": "^3.4.1",
     "vite": "^5.1.4"
   }
 }

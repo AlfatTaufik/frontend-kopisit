@@ -33,7 +33,7 @@ export const links = [
   },
   {
     name: 'About',
-    path: 'about',
+    path: 'about',  
   },
   {
     name: 'Layanan',
@@ -44,16 +44,8 @@ export const links = [
     path: 'menu',
   },
   {
-    name: 'Gallery',
-    path: 'gallery',
-  },
-  {
-    name: 'Chefs',
+    name: 'Team',
     path: 'team',
-  },
-  {
-    name: 'Testimonials',
-    path: 'testimonials',
   },
 ];
 
@@ -94,7 +86,7 @@ export const menu = [
     img: menu1,
     title: 'Americano Coffee',
     description: 'Milk with vanilla flavored',
-    price: 50.25,
+    price: 50,
   },
   {
     id: 2,
@@ -144,53 +136,6 @@ export const menu = [
     title: 'Cold Coffee',
     description: 'Milk with vanilla flavored',
     price: 40.25,
-  },
-];
-
-export const gallery = [
-  {
-    id: 1,
-    img: gallery1,
-    title: 'Cappuccino Arabica',
-  },
-  {
-    id: 2,
-    img: gallery2,
-    title: 'Cappuccino Arabica',
-  },
-  {
-    id: 3,
-    img: gallery3,
-    title: 'Cappuccino Arabica',
-  },
-  {
-    id: 4,
-    img: gallery4,
-    title: 'Cappuccino Arabica',
-  },
-  {
-    id: 5,
-    img: gallery5,
-    title: 'Cappuccino Arabica',
-  },
-];
-
-export const offer = [
-  {
-    id: 1,
-    img: offer1,
-    title: 'Cappuccino Arabica',
-    discount: 'Get 40% Offer',
-    description:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its normal distribution layout.',
-  },
-  {
-    id: 2,
-    img: offer2,
-    title: 'Cappuccino Arabica',
-    discount: 'Get 40% Offer',
-    description:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its normal distribution layout.',
   },
 ];
 

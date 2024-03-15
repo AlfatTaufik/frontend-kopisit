@@ -1,3 +1,7 @@
+.feature {
+    margin-bottom: 2rem;
+}
+
 .features__grid{
     grid-template-columns: repeat(4, 1fr);
 }

@@ -1,0 +1,125 @@
+@media screen and (max-width:1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .features__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:990px) {
+    :root {
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.2rem;
+        --h3-font-size: 1rem;
+        --largest-font-size: 1.3rem;
+        --larger-font-size: 1.25rem;
+        --large-font-size: 1rem;
+        --normal-font-size: 1rem;
+    }
+
+
+    .nav__menu.show-menu {
+        max-height: 120px;
+    }
+
+    .container {
+        max-width: 720px;
+    }
+
+    .btn {
+        padding: 0.75rem 1.25rem;
+    }
+
+    .nav {
+        height: var(--header-height);
+    }
+
+    .nav__logo-img {
+        width: 140px;
+    }
+
+    .nav__menu {
+        position: absolute;
+        top: 100%;
+        inset-inline: 3rem;
+        background-color: var(--title-color);
+        max-height: 0px;
+        overflow: scroll;
+        transition: 0.3s var(--transition);
+    }
+
+    .nav__menu.show-menu {
+        max-height: 220px;
+    }
+
+    .nav__item {
+        padding: 0.5rem 1.25rem;
+    }
+
+    .nav__list {
+        flex-direction: column;
+    }
+
+    .nav-res-style.nav__link {
+        color: var(--bg-color);
+    }
+
+    .menu-res.nav__toggle {
+        display: block;
+    }
+
+    .about__grid,
+    .menu__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .choose__grid {
+        row-gap: 2rem;
+    }
+
+    .home__btns {
+        flex-wrap: wrap;
+        gap: 1.25rem;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .about__img-wrapper {
+        padding-left: 1rem;
+    }
+
+    .about__img-wrapper::before {
+        bottom: -0.5rem;
+    }
+
+    .features__grid,
+    .menu__item,
+    .team__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu__img-wrapper {
+        width: 60px;
+        height: 60px;
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .container {
+        max-width: 320px;
+    }
+}

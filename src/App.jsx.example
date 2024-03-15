@@ -1,0 +1,32 @@
+import React, { useState } from 'react';
+import './App.css';
+import Login from './components/loginPage/Login';
+import Register from './components/loginPage/Register';
+
+function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleLogin = () => {
+    setIsLoggedIn(true);
+  };
+
+  return (
+    <div className="App">
+      {!isLoggedIn && <Login onLogin={handleLogin} />}
+      {isLoggedIn && (
+        <>
+          {/* <Header />
+          <Home />
+          <About />
+          <Layanan />
+          <Menu />
+          <Barista />
+          <Footer /> */}
+          <Register/>
+        </>
+      )}
+    </div>
+  );
+}
+
+export default App;

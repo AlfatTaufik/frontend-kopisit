@@ -20,9 +20,9 @@
     --body-font: "Ojuju", sans-serif;
     --second-font: "Lobster Two", sans-serif;
    /* Ukuran Font */
-    --biggest-font-size: 4rem;
-    --bigger-font-size: 3rem;
-    --big-font-size: 2rem;
+    --biggest-font-size: clamp(2rem, 1.2727rem + 3.6364vw, 4rem);
+    --bigger-font-size: clamp(1.5rem, 1.2727rem + 3.6364vw, 3.5rem);
+    --big-font-size: clamp(1rem, 1.2727rem + 3.6364vw, 3rem);
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.2rem;
     --h3-font-size: 1rem;

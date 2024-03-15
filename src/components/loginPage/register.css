@@ -1,0 +1,89 @@
+/* register.css */
+
+.register-container {
+  background-image: url('../../assets/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register__form {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  margin: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.register__form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+  /* Ubah warna teks menjadi putih */
+}
+
+.register__form input[type="text"],
+.register__form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  /* Ubah warna background input */
+  color: #000000;
+  /* Ubah warna teks */
+}
+
+.register__form input[type="text"]::placeholder,
+.register__form input[type="password"]::placeholder {
+  color: #000000;
+  /* Ubah warna placeholder teks */
+}
+
+.register__form button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--first-color);
+  /* Anda bisa mengubah warna sesuai keinginan */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--body-font);
+  font-size: 15px;
+}
+
+.register__form button:hover {
+  background-color: var(--first-color-light);
+  /* Efek hover */
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--first-color);
+  /* Ubah warna teks link */
+}
+
+.login-link a {
+  color: #ffffff;
+  /* Ubah warna teks menjadi putih */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}
